@@ -132,12 +132,19 @@ Table \ref{tab:results} summarizes the performance of all trained models on the 
 \subsubsection{Feedforward Neural Network (FNN)}
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.45\textwidth]{fnn_baseline_cm.png}
-    % \includegraphics[width=0.45\textwidth]{fnn_smote_cm.png} \\
+    \includegraphics[width=0.45\textwidth]{nn_baseline_cm.png}
+    \includegraphics[width=0.45\textwidth]{nn_smote_cm.png} \\
     \vspace{0.5cm}
-    % \includegraphics[width=0.45\textwidth]{fnn_oversample_cm.png}
-    % \includegraphics[width=0.45\textwidth]{fnn_undersample_cm.png}
-    \caption{FNN Confusion Matrices (Top Left: Baseline, Top Right: SMOTE, Bottom Left: Oversampled, Bottom Right: Undersampled)}
+    \includegraphics[width=0.45\textwidth]{nn_overSampling_cm.png}
+    \includegraphics[width=0.45\textwidth]{nn_UnderSampling_cm.png}
+    \caption{FNN Confusion Matrices: Baseline (top-left), SMOTE (top-right), Oversampling (bottom-left), Undersampling (bottom-right).}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{nn_Smoteen_cm.png}
+    \includegraphics[width=0.45\textwidth]{nn_classWeights_cm.png}
+    \caption{FNN Confusion Matrices: SMOTEENN (left), Class Weights (right).}
 \end{figure}
 
 \section{Analysis and Comparison}

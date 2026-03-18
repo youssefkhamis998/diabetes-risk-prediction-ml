@@ -21,22 +21,23 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Softmax Regression}{5}{subsubsection.3.3.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Softmax Confusion Matrices: Baseline (top-left), SMOTE (top-right), Oversampling (bottom-left), Undersampling (bottom-right).}}{5}{figure.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Softmax Confusion Matrices: SMOTEENN (top-left), Class Weights (top-right), Threshold Tuning (bottom-left).}}{6}{figure.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Feedforward Neural Network (FNN)}{6}{subsubsection.3.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces FNN Confusion Matrices (Top Left: Baseline, Top Right: SMOTE, Bottom Left: Oversampled, Bottom Right: Undersampled)}}{6}{figure.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Analysis and Comparison}{6}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model Comparison}{6}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Impact of Imbalance Handling}{7}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Insights and Misclassification Patterns}{7}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Bonus: TensorBoard Monitoring}{8}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Training Dynamics (Loss and Accuracy Curves)}{8}{subsection.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces TensorBoard training and validation loss across epochs.}}{8}{figure.5}\protected@file@percent }
-\newlabel{fig:tb_loss}{{5}{8}{TensorBoard training and validation loss across epochs}{figure.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces TensorBoard training and validation accuracy across epochs.}}{9}{figure.6}\protected@file@percent }
-\newlabel{fig:tb_acc}{{6}{9}{TensorBoard training and validation accuracy across epochs}{figure.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Overfitting vs. Underfitting Diagnosis}{9}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Optimisation Stability (Learning Rate and Internal Statistics)}{10}{subsection.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Learning rate over training steps/epochs. A stable (or smoothly decaying) learning rate typically supports steady convergence, while abrupt jumps can correlate with spiky validation curves.}}{10}{figure.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces TensorBoard parameter trace (beta). Smooth trends suggest stable optimisation; sharp discontinuities would indicate unstable updates.}}{11}{figure.8}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces TensorBoard parameter trace (bias). When bias parameters grow rapidly while validation loss stops improving, it can be a sign of overfitting or poor calibration.}}{11}{figure.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Moving variance trace from normalisation layers. Stable/slowly-changing variance indicates consistent feature scaling across batches; high oscillation can reflect gradient noise (often worse under heavy undersampling).}}{12}{figure.10}\protected@file@percent }
-\gdef \@abspage@last{12}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Feedforward Neural Network (FNN)}{7}{subsubsection.3.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces FNN Confusion Matrices: Baseline (top-left), SMOTE (top-right), Oversampling (bottom-left), Undersampling (bottom-right).}}{7}{figure.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces FNN Confusion Matrices: SMOTEENN (left), Class Weights (right).}}{7}{figure.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Analysis and Comparison}{7}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model Comparison}{7}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Impact of Imbalance Handling}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Insights and Misclassification Patterns}{8}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Bonus: TensorBoard Monitoring}{9}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Training Dynamics (Loss and Accuracy Curves)}{9}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces TensorBoard training and validation loss across epochs.}}{9}{figure.6}\protected@file@percent }
+\newlabel{fig:tb_loss}{{6}{9}{TensorBoard training and validation loss across epochs}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces TensorBoard training and validation accuracy across epochs.}}{10}{figure.7}\protected@file@percent }
+\newlabel{fig:tb_acc}{{7}{10}{TensorBoard training and validation accuracy across epochs}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Overfitting vs. Underfitting Diagnosis}{10}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Optimisation Stability (Learning Rate and Internal Statistics)}{11}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Learning rate over training steps/epochs. A stable (or smoothly decaying) learning rate typically supports steady convergence, while abrupt jumps can correlate with spiky validation curves.}}{11}{figure.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces TensorBoard parameter trace (beta). Smooth trends suggest stable optimisation; sharp discontinuities would indicate unstable updates.}}{12}{figure.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces TensorBoard parameter trace (bias). When bias parameters grow rapidly while validation loss stops improving, it can be a sign of overfitting or poor calibration.}}{12}{figure.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Moving variance trace from normalisation layers. Stable/slowly-changing variance indicates consistent feature scaling across batches; high oscillation can reflect gradient noise (often worse under heavy undersampling).}}{13}{figure.11}\protected@file@percent }
+\gdef \@abspage@last{13}
